@@ -1,126 +1,338 @@
 # MVP
 
-## **1. Core Outcome of MVP**
+1. Core Outcome of MVP
 
-A clean, simple mobile/web app where users manually build a structured pipeline:
+A clean, simple mobile/web app where users manually build a structured plan:
 
-**Resolution → Monthly Milestones → Weekly Tasks → Daily Actions → Today’s Focus Task**
+Resolution → Milestones → Tasks → Today’s Focus Task
 
-No AI. No auto-generation. Simple logic. Clean UX.
+Milestones = major checkpoints toward the resolution
 
-# **2. MVP FEATURES (All Required)**
+Tasks = actionable steps under each milestone
 
-## **A. Resolutions (Top Layer)**
+No months, weeks, or habits required
 
-### What users can do:
+Timeframes are optional (deadlines, not rigid structure)
 
-- Add **up to 3 resolutions** in free tier (MVP pricing).
-- Title + Category + Optional deadline.
-- Edit/delete resolutions.
+No AI. No auto-generation. Simple logic. Clean, intuitive UX.
 
-### What we are *not* doing in MVP:
+2. MVP FEATURES (All Required)
+   A. Resolutions (Top Layer)
+   What users can do:
 
-- No AI suggestions.
-- No automated milestone creation.
-- No dependencies.
+Add up to 3 resolutions in free tier.
 
-## **B. Monthly Milestones**
+Resolution contains:
 
-### What users can do:
+Title
 
-- For each resolution, manually add monthly milestones.
-- OR choose from **limited starter templates** (3–5 templates):
-    - Lose Weight
-    - Save Money
-    - Read More
-    - Get Promoted
-    - Build a Side Project
-        
-        Selecting a template populates sample milestones but user can edit freely.
-        
+Category
 
-### Not doing:
+Optional deadline
 
-- No smart question-based milestone generator.
-- No automated monthly breakdown.
+Each resolution can include:
 
-## **C. Weekly Checklists**
+Structured Milestones
 
-### What users can do:
+Simple Tasks (one-off goals)
 
-- For each monthly milestone, create weekly tasks.
-- Auto-import weekly tasks from templates (if the user used a template).
-- Mark weekly tasks as completed (checkbox-style).
+Edit/delete resolutions.
 
-### Not doing:
+What we are not doing:
 
-- No habit logic.
-- No streaks.
-- No smart scheduling.
+No AI suggestions.
 
----
+No automated milestone creation.
 
-## **D. Daily Actions (Daily Checklist)**
+No forced monthly/weekly breakdowns.
 
-### What users can do:
+No dependency logic.
 
-- From weekly tasks, pick 2–3 tasks as today’s actions.
-- See the day’s list (simple checklist).
-- Mark them as complete.
+B. Milestones (Structured Checkpoints)
 
-### Not doing:
+Milestones replace Monthly → Weekly → Daily hierarchy.
 
-- No calendar view.
-- No habit tracker.
-- No auto-fill daily tasks.
+What users can do:
 
-## **E. Today’s Focus Task**
+Create milestones under each resolution.
 
-### Simple prioritization based on:
+Milestones represent meaningful progress stages.
 
-- Deadline
-- Importance (High / Medium / Low)
+Add tasks under each milestone.
 
-App picks ONE suggestion for Today’s Focus Task.
+Assign optional deadlines.
 
-This is **not an algorithm**, just rule-based sorting.
+Use limited starter templates (3–5):
 
----
+Lose Weight
 
-## **F. Progress Tracking**
+Save Money
 
-### Must have:
+Read More
 
-- **Weekly progress %** (completed weekly tasks / total weekly tasks)
-- **Monthly progress %** (completed tasks from milestones)
-- **Yearly progress %** (completed tasks under entire resolution)
+Get Promoted / Better Job
 
-Displayed visually (simple progress bars).
+Build a Side Project
+Templates populate sample milestones + tasks (user can edit freely).
 
----
+Not doing:
 
-## **G. Notifications**
+No question-based milestone generator.
 
-### Basic notifications only:
+No smart ordering.
 
-- Daily reminder (one notification)
-- Weekly summary
-- Monthly reflection
+No habit tracking inside milestones.
 
-No smart notifications, no time-aware tracking.
+C. Tasks (Action Items)
 
----
+Tasks replace Weekly Checklists and Daily Actions.
 
-## **H. UI/UX Requirements**
+What users can do:
+
+Add tasks inside milestones.
+
+Add simple tasks directly under a resolution (for one-off or checklist goals).
+
+Mark tasks as completed.
+
+Tasks can optionally have:
+
+Deadline
+
+Importance (High / Medium / Low)
+
+Not doing:
+
+No recurring tasks.
+
+No streaks.
+
+No auto-scheduling.
+
+No habit logic.
+
+D. Today’s Actions View
+What users can do:
+
+See all tasks due today or marked by the user as “Today”.
+
+Pick 2–3 tasks manually as today’s action plan.
+
+Mark tasks complete.
+
+Tasks can come from:
+
+Any milestone
+
+Simple tasks under the resolution
+
+Not doing:
+
+No auto-pick of daily tasks.
+
+No daily habit tracking.
+
+No calendar.
+
+E. Today’s Focus Task
+
+A simple prioritization to help users focus:
+
+Rule-based selection (no algorithm):
+
+Show ONE task as “Focus of the Day”
+
+Based on:
+
+Importance
+
+Deadline
+
+User selection (user may override)
+
+F. Progress Tracking
+Must have:
+
+Milestone progress %
+(Completed milestone tasks ÷ total tasks)
+
+Resolution progress %
+(Weighted completion of all milestones + simple tasks)
+
+Today progress
+(Completed vs selected tasks)
+
+Displayed visually via:
+
+Progress bars
+
+Checkmarks
+
+Completed vs remaining counts
+
+Not doing:
+
+No weekly progress percentages
+
+No monthly progress percentages
+
+No streaks
+
+No aggregated habit analytics
+
+G. Notifications
+
+Basic and minimal:
+
+Daily reminder
+
+Weekly check-in prompt
+(“Did you make progress on your resolutions?”)
+
+Monthly reflection
+
+No smart logic. No time-aware nudging.
+
+H. UI/UX Requirements
 
 The MVP MUST feel clean and polished:
 
-- Minimal, modern UI
-- Smooth navigation
-- Clear hierarchy: Year → Month → Week → Day
+Minimal, modern UI
 
-No animations or fancy custom views required, but the UX must feel premium.
+Smooth navigation
 
----
+Clear hierarchy: Resolution → Milestone → Task
 
-#
+No animations or complex interactions
+
+Avoid overwhelming users with too much structure
+
+Templates must feel simple and helpful
+
+3. What’s intentionally excluded in MVP
+
+AI breakdown or suggestions
+
+Habit tracking
+
+Recurring tasks
+
+Calendar view
+
+Monthly/weekly required structure
+
+Streaks
+
+Prioritization algorithms
+
+Dependency-based task ordering
+
+Goal types (numeric, limit-based, conditional) — deferred to V1
+
+4. MVP Deliverables
+
+By completion, MVP must include:
+
+Add/Edit Resolution
+
+Add/Edit Milestones
+
+Add/Edit Tasks (inside milestones or standalone)
+
+Templates (5 basic templates with milestones + example tasks)
+
+Today View (daily action plan + Focus Task)
+
+Progress visuals (resolution + milestone)
+
+Basic notifications
+
+Pricing/Upgrade screen + paywall logic
+
+Clean and intuitive navigation (bottom nav with Today / Resolutions / Settings)
+
+5. Updated Resolution Flow (Final MVP Model)
+   Resolution (Yearly Goal)
+   ├── Milestone 1
+   │ ├── Task 1
+   │ ├── Task 2
+   │ └── Task 3
+   ├── Milestone 2
+   │ ├── Task 1
+   │ └── Task 2
+   └── Simple Tasks (optional)
+   ├── Task A
+   └── Task B
+
+This model supports:
+
+Complex goals (career, finance, fitness, projects)
+
+Simple goals (insurance, certifications, cleanup tasks)
+
+Mixed goals
+
+Self-paced goals
+
+Checklists
+
+Reading, learning, saving, portfolio building
+
+Everything seen in Reddit thread
+
+Without requiring weeks/days/habits.
+
+Example Use Cases (For DB + Architecture Clarity)
+
+1. Lose 20kg (Outcome Goal)
+   Resolution: Lose 20kg
+   Milestones:
+
+- Build healthy routines
+- Improve workout consistency
+- Reduce calorie intake
+  Tasks:
+- Join gym
+- Buy weighing scale
+- Meal prep
+- Walk 8k steps (optional)
+
+2. Read 12 Books (Count Goal)
+   Resolution: Read 12 Books
+   Milestones:
+
+- Book 1
+- Book 2
+- ...
+  Tasks (per milestone):
+- Acquire book
+- Read
+- Finish
+
+3. Become Financially Strong (Mixed Goal Type)
+   Resolution: Become Financially Strong
+   Milestones:
+
+- Build emergency fund
+- Improve income potential
+- Strengthen financial security
+  Tasks:
+- Save INR 25k / 50k / 1L
+- Update resume
+- Complete certification
+- Take health insurance (simple task)
+- Take term insurance (simple task)
+
+4. Get a High-Paying Job (Strategic Goal)
+   Resolution: Get a High-Paying Job
+   Milestones:
+
+- Upgrade skills
+- Build portfolio
+- Improve profile (resume/LinkedIn)
+- Apply for better roles
+  Tasks:
+- Complete certification
+- Build 2 projects
+- Shortlist companies
+- Apply + follow-up
