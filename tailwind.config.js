@@ -34,6 +34,27 @@ module.exports = {
           none: "var(--priority-none)",
         },
       },
+      borderRadius: {
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        full: "9999px",
+      },
+      boxShadow: {
+        card: "0px 2px 6px rgba(0,0,0,0.05)",
+        fab: "0px 8px 24px rgba(0,0,0,0.18)",
+      },
+      fontFamily: {
+        sans: ["Inter", "SF Pro Text", "system-ui"],
+      },
+      fontSize: {
+        xs: "11px",
+        sm: "12px",
+        base: "15px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+      },
     },
   },
   plugins: [],
