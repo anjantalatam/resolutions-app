@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Brand */
+        --brand-orange: #FF8A34;
+        --brand-orange-soft: rgba(255,138,52,0.12);
+      
+        /* Priority */
+        --priority-p1: #EF4444;
+        --priority-p2: #FACC15;
+        --priority-p3: #3A7AFE;
+        --priority-none: #9CA3AF;
+      
+        /* Text */
+        --text-primary: #1C1C1E;
+        --text-secondary: #6E6E73;
+        --text-muted: #9CA3AF;
+      
+        /* Backgrounds */
+        --bg-app: #F9FAFA;
+        --bg-card: #FFFFFF;
+        --bg-track: #EDEDED;
+      
+        /* Borders */
+        --border-light: #EDEDED;
+        --divider: rgba(0,0,0,0.06);
+      }
+
+    .dark:root {
+        /* Dark Mode */
+        --color-background: #0F172A;
+        --color-surface: #1E293B;
+        --color-text-primary: #F8FAFC;
+        --color-text-secondary: #94A3B8;
+        --color-border: #334155;
+    }
+}
